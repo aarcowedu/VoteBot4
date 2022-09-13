@@ -2,9 +2,10 @@
   "name": "votebot4",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/main.cjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node ./src/main.cjs",
+    "deploy": "node ./src/deployment.cjs"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,6 @@
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.1",
     "prettier": "^2.7.1"
-  }
+  },
+  "type": "commonjs"
 }
