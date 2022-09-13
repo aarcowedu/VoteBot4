@@ -38,7 +38,7 @@ client.commands = new Collection();
 
 const commandsPath = join(__dirname, "commands");
 const commandFiles = readdirSync(commandsPath).filter((file) => {
-  return file.endsWith(".js");
+  return file.endsWith(".cjs");
 });
 for (const file of commandFiles) {
   const filePath = join(commandsPath, file);
@@ -48,7 +48,7 @@ for (const file of commandFiles) {
 
 const eventsPath = join(__dirname, "events");
 const eventFiles = readdirSync(eventsPath).filter((file) =>
-  file.endsWith(".js")
+  file.endsWith(".cjs")
 );
 
 for (const file of eventFiles) {
